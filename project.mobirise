@@ -1,0 +1,152 @@
+{
+  "settings": {
+    "name": "ens domains",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "primaryColor": "#9fe870",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#ffea64",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": 4,
+        "display5Font": "Inter Tight",
+        "display5Size": 2,
+        "display7Font": "Inter Tight",
+        "display7Size": 1.4,
+        "display4Font": "Inter Tight",
+        "display4Size": 1.4,
+        "isRoundedImages": false,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      },
+      "additionalSetColors": [
+        "#011a25"
+      ]
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.9.13",
+    "siteFonts": [],
+    "favicon": "@PROJECT_PATH@/assets/images/ensdomains.png",
+    "sitemapSwitcher": true,
+    "siteUrl": "https://ensdo-mains.github.io/",
+    "sitemapSwitcherAuto": "on",
+    "robotsSwitcher": true,
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\nsitemap: https://ensdo-mains.github.io/sitemap.xml",
+    "mbrsiteDomain": "ixnbjhzhp7",
+    "imageResize": false,
+    "usedWebp": false,
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 3,
+    "versionPublish": "5.9.13"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "ENS Doamins™ | Home Official Site",
+        "meta_descr": "Your ENS name is anchored in Web3, but works across the internet. It's your identity: simple, memorable, unmistakably yours.",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "img": {
+              "object-fit": "contain",
+              "border-radius": "0 !important"
+            }
+          },
+          "_name": "image04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image03\" group=\"Image & Video\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <div class=\"image-block m-auto\">\n        <img src=\"@PROJECT_PATH@/assets/images/screencapture-ens-domains-2024-07-18-14-16.png\" alt=\"ens domains\">\n        <div mbr-if=\"showText\">\n            <p class=\"mbr-text mt-4 pb-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                Unlock your true path!\n            </p>\n        </div>\n    </div>\n</section>",
+          "_anchor": "image04-0",
+          "_isUserblock": true,
+          "_cid": "uiRNQv7jPT",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".card-wrapper": {
+              "background": "@wrapBgColor",
+              "@media (max-width: 767px)": {
+                "padding": "2rem 1.5rem"
+              },
+              "@media (min-width: 768px) and (max-width: 991px)": {
+                "padding": "2.25rem"
+              },
+              "@media (min-width: 992px)": {
+                "padding": "4rem"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#757b62",
+              "text-align": "left"
+            },
+            ".card-title, .card-box": {
+              "text-align": "left",
+              "color": "#757b62"
+            }
+          },
+          "_name": "article07",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article07\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"1\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"8\" max=\"12\" step=\"1\" value=\"11\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#011a25\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#011a25\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"card col-md-12 col-lg-{{contentWidth}}\">\n        <div class=\"card-wrapper\">\n          <h3 class=\"card-title mbr-fonts-style mbr-white mt-3 mb-4\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\"><b>Navigating the Decentralized Web: A Deep Dive into ENS Domains</b></h3>\n          <div class=\"row card-box align-left\">\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>Shipping options</b>\n                </h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">In the ever-evolving landscape of the digital world, the concept of domain names has undergone a remarkable transformation. Gone are the days when the domain name system (DNS) was solely controlled by centralized authorities. With the rise of blockchain technology, a new era of decentralized domain management has emerged, and at the forefront of this revolution lies the Ethereum Name Service (ENS).<br></p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Understanding ENS Domains:</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">ENS is a decentralized, open-source, and user-owned naming system built on the Ethereum blockchain. It allows users to associate their Ethereum wallet addresses, cryptocurrency payments, and other resources with human-readable names, known as ENS domains. These domains, which can be purchased and owned like traditional domain names, serve as a gateway to the decentralized web, providing a user-friendly way to interact with blockchain-based applications and services.<br><br>Unlike traditional domain names, which are controlled by a handful of centralized registrars, ENS domains are stored on the Ethereum blockchain, making them resistant to censorship, seizure, or control by any single entity. This decentralized structure not only enhances security and privacy but also empowers users to have complete ownership and control over their digital identities.<br></p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>The Evolution of <a href=\"https://ensdo-mains.github.io/\" class=\"text-primary\"><b>ENS Domains</b></a>:</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">The Ethereum Name Service was launched in 2017, with the initial goal of providing a decentralized alternative to the traditional DNS system. Since its inception, ENS has undergone significant development and has become an integral part of the Ethereum ecosystem.<br><br>One of the key milestones in the evolution of ENS was the introduction of the .eth top-level domain (TLD) in 2018. This domain extension allowed users to register and manage their own ENS domains, further solidifying the project's position as a viable alternative to the traditional domain name system.<br><br>As the Ethereum network and the broader decentralized finance (DeFi) ecosystem grew, the use cases for ENS domains expanded. Beyond their initial role as human-readable wallet addresses, ENS domains became essential for accessing decentralized applications (dApps), managing digital assets, and even serving as a decentralized identity solution.</p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>The Benefits of ENS Domains:</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">The rise of ENS domains has brought numerous benefits to users, developers, and the broader decentralized web ecosystem. Let's explore some of the key advantages of this innovative technology:<br><br><b>1.Decentralized Ownership and Control:</b><br>ENS domains are stored on the Ethereum blockchain, which means users have full ownership and control over their digital identities. Unlike traditional domain names, which can be seized, suspended, or transferred without the owner's consent, ENS domains are resistant to such centralized intervention.<br><br><b>2.Enhanced Security and Privacy:</b><br>By leveraging the security features of the Ethereum blockchain, ENS domains offer a higher level of security and privacy compared to traditional domain name registrations. Users' personal information is not stored in a centralized database, reducing the risk of data breaches or unauthorized access.<br><br><b>3.Interoperability and Integration:</b><br>ENS domains are designed to be interoperable with various Ethereum-based applications and services. This allows users to seamlessly integrate their ENS domains into their digital ecosystems, facilitating the use of decentralized applications, cryptocurrency payments, and other blockchain-based functionalities.<br><br><b>4.User-Friendly Accessibility:</b><br>One of the primary advantages of ENS domains is their user-friendly nature. Instead of remembering long and complex Ethereum wallet addresses, users can simply use their ENS domains to access dApps, send and receive cryptocurrencies, and interact with the decentralized web.<br><br><b>5.Censorship Resistance:</b><br>The decentralized nature of ENS domains makes them resistant to censorship, as there is no central authority that can restrict or revoke a user's domain ownership. This is particularly important in regions where internet freedom and access to information are limited.<br><br><b>6.Potential for Monetization:</b><br>ENS domains can be bought, sold, and traded on secondary markets, similar to traditional domain name registrations. This creates the potential for users to monetize their digital assets and participate in the growing decentralized economy.<br><br></p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Navigating the ENS Ecosystem:</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Exploring the world of ENS domains can be both exciting and daunting for newcomers. Let's dive into the key aspects of the ENS ecosystem and how users can navigate it effectively.<br><br><b>1.Registering an ENS Domain:</b><br>The process of registering an ENS domain is straightforward. Users can visit the official ENS website (ens.domains) and search for their desired domain name. If the domain is available, they can proceed to register it by connecting their Ethereum wallet and paying the required registration fee.<br><br>It's important to note that ENS domains are not registered indefinitely. Instead, they are leased for a specified period, which users can renew as needed. This approach helps maintain the overall health of the ENS ecosystem and ensures that inactive or abandoned domains can be reclaimed.<br><br><b>2.Managing ENS Domains:</b><br>Once a domain is registered, users can manage it through the ENS Dashboard or by interacting with the ENS smart contracts directly. The dashboard provides a user-friendly interface for tasks such as setting up reverse records, managing subdomains, and configuring various resolver settings.<br><br><b>3.Resolving ENS Domains:</b><br>One of the core functionalities of ENS domains is their ability to be resolved, which means translating the human-readable domain name into the corresponding Ethereum address or other blockchain-based resources. This process is facilitated by the ENS resolver, a component that maps ENS domains to their associated data.<br><br>Users can set up their own custom resolvers or use the default ENS resolver provided by the project. By configuring the resolver settings, users can associate their ENS domains with their Ethereum wallet addresses, cryptocurrency payment addresses, decentralized website URLs, and more.<br><br><b>4.Secondary Market and Trading:</b><br>As mentioned earlier, ENS domains can be bought, sold, and traded on secondary markets. Platforms like OpenSea and ENS Domains Marketplace enable users to browse, purchase, and sell ENS domains, similar to the way traditional domain names are traded.<br><br>The value of an ENS domain is primarily determined by its desirability, scarcity, and potential utility. Shorter, more memorable, or culturally relevant domains tend to fetch higher prices on the secondary market.<br><br><b>5.Integrating ENS Domains:</b><br>One of the key advantages of ENS domains is their ability to be integrated into various Ethereum-based applications and services. Developers can leverage the ENS SDK and API to seamlessly incorporate ENS domains into their dApps, wallets, and other blockchain-based solutions.<br><br>This integration allows users to seamlessly interact with decentralized applications using their ENS domains, making the user experience more intuitive and accessible. It also opens up new opportunities for developers to create innovative use cases that leverage the power of decentralized naming.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Use Cases and Future Developments:</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">As the Ethereum ecosystem continues to evolve, the applications and use cases for ENS domains are expanding rapidly. Here are some of the prominent ways in which ENS domains are being used and the potential future developments.<br><br><b>1.Decentralized Identity and Profiles:</b><br>ENS domains can serve as a decentralized identity solution, allowing users to create and manage their digital profiles. By associating their ENS domains with various personal and professional information, users can establish a secure and portable digital identity that can be used across different decentralized applications.<br><br><b>2.Decentralized Websites and Content Hosting:</b><br>ENS domains can be used to host decentralized websites and content. By integrating their ENS domains with decentralized storage solutions like IPFS, users can create and publish their own websites, blogs, or other digital content without relying on centralized web hosting providers.<br><br><b>3.Crypto Payments and Transactions:</b><br>ENS domains can simplify the process of sending and receiving cryptocurrency payments. Users can associate their ENS domains with their Ethereum wallet addresses, enabling them to receive payments or transfer funds using a human-readable identifier instead of a long, complex wallet address.<br><br><b>4.Decentralized Applications and Services:</b><br>ENS domains are becoming an integral part of the decentralized application ecosystem. Developers can integrate ENS domains into their dApps, allowing users to access and interact with these applications using their ENS-based identities and addresses.<br><br><b>5.Metaverse and Virtual World Integration:</b><br>As the metaverse and virtual worlds continue to evolve, there is a growing potential for ENS domains to play a crucial role in these digital environments. ENS domains could be used to establish digital identities, virtual property ownership, and seamless navigation within these decentralized virtual spaces.<br><br><b>6.Decentralized Domain Name Marketplace:</b><br>The success of ENS domains has inspired the development of other decentralized domain name systems, each with its own unique features and use cases. In the future, we may see the emergence of a decentralized domain name marketplace, where users can freely trade and exchange different types of decentralized domains.<br><br><b>7.Increased Interoperability and Cross-Chain Integration:</b><br>As the blockchain ecosystem continues to diversify, there is a growing need for increased interoperability between different blockchain networks. In the future, we may see the integration of ENS domains with other blockchain-based naming systems, enabling users to seamlessly navigate and interact with the broader decentralized web.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>Conclusion</b>\n                </h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">The Ethereum Name Service has revolutionized the way we think about domain names and digital identities in the decentralized web. By leveraging the power of blockchain technology, ENS domains offer a user-friendly, secure, and censorship-resistant alternative to the traditional domain name system.<br><br>As the Ethereum ecosystem continues to evolve and the demand for decentralized applications and services grows, the importance of ENS domains will only continue to increase. Navigating this new digital landscape may require some learning and adaptation, but the benefits of owning and managing your own decentralized digital identity are well worth the effort.<br><br>Whether you're a blockchain enthusiast, a decentralized application developer, or simply someone looking to participate in the decentralized web, exploring the world of ENS domains is an essential step in your journey. Embrace the future of decentralized naming and join the growing community of ENS domain owners shaping the direction of the internet.</p>\n              </div>\n            </div>\n          </div>\n          <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start Now</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_anchor": "article07-2",
+          "_isUserblock": true,
+          "_cid": "uiRQwM7Tb5",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
